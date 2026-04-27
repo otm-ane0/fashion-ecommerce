@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import { useNavigate, Link, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Eye, EyeOff, ArrowRight, Check } from 'lucide-react';
 import { useStore } from '../context/StoreContext';
 import PageTransition from '../components/PageTransition';
-import { cn } from '../lib/utils';
 
 export default function LoginPage() {
   const navigate = useNavigate();

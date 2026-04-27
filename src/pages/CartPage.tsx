@@ -4,7 +4,6 @@ import { Minus, Plus, X, ArrowRight, ShoppingBag, Package } from 'lucide-react';
 import { useStore } from '../context/StoreContext';
 import PageTransition from '../components/PageTransition';
 import { formatPrice } from '../lib/utils';
-import { cn } from '../lib/utils';
 
 export default function CartPage() {
   const { cart, cartTotal, cartCount, updateCartQuantity, removeFromCart } = useStore();

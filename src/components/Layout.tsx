@@ -136,7 +136,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+              transition={{ duration: 0.3, ease: 'easeOut' }}
               className="overflow-hidden border-t border-neutral-100 bg-white"
             >
               <div className="max-w-[1440px] mx-auto px-6 md:px-10 py-6">

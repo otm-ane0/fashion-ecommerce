@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Package, Heart, User, LogOut, ChevronRight, MapPin, CreditCard } from 'lucide-react';
+import { Package, Heart, User, LogOut, ChevronRight, MapPin } from 'lucide-react';
 import { useStore } from '../context/StoreContext';
 import PageTransition from '../components/PageTransition';
 import ProductCard from '../components/ProductCard';
@@ -17,7 +17,7 @@ const tabs = [
 
 export default function AccountPage() {
   const navigate = useNavigate();
-  const { isLoggedIn, user, logout, products, wishlist, cart } = useStore();
+  const { isLoggedIn, user, logout, products, wishlist } = useStore();
   const [activeTab, setActiveTab] = useState('orders');
   const [mounted, setMounted] = useState(false);
 

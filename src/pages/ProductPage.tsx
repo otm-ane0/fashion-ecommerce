@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Heart, ShoppingBag, Minus, Plus, Check, ChevronRight, ArrowLeft } from 'lucide-react';
+import { Heart, ShoppingBag, Minus, Plus, Check, ChevronRight } from 'lucide-react';
 import { useStore } from '../context/StoreContext';
 import PageTransition from '../components/PageTransition';
 import ProductCard from '../components/ProductCard';
